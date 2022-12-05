@@ -1,0 +1,160 @@
+{
+    "home": {
+        "displayName": "Home",
+        "tweets": [
+        ]
+    },
+    "elonmusk": {
+        "userName": "@elonmusk",
+        "displayName": "Elon Musk",
+        "joinedDate": "June 2009",
+        "followingCount": 130,
+        "followerCount": 119400000,
+        "avatarURL": "assets/elonmusk.jpg",
+        "coverPhotoURL": "assets/elonmusk-cover.jpeg",
+        "tweets": [
+            {
+                "retweetUserName": "BillGates",
+                "tweetIndex" : 0
+            },
+            {
+                "retweetUserName": "pmarca",
+                "tweetIndex" : 0
+            },
+            {
+                "text": "I admit to judging books by their cover",
+                "timestamp": "12/1/2022 14:01:20",
+                "reply": 85785,
+                "retweet": 158500,
+                "like": 800567994
+            },
+            {
+                "retweetUserName": "BillyM2k",
+                "tweetIndex" : 0
+            },
+            {
+                "text": "Starship to the moon",
+                "timestamp": "2/09/2021 18:37:12",
+                "reply": 15785,
+                "retweet": 58500,
+                "like": 300567994
+            },
+            {
+                "text": "Out on launch pad, engine swap underway",
+                "timestamp": "2/09/2021 12:11:51",
+                "reply": 857859,
+                "retweet": 753500,
+                "like": 2008567994
+            },
+            {
+                
+                "retweetUserName": "pmarca",
+                "tweetIndex" : 0
+            }
+        ]
+    },
+    "BillGates" : {
+        "userName": "@BillGates",
+        "displayName": "Bill Gates",
+        "joinedDate": "June 2009",
+        "followingCount": 274,
+        "followerCount": 53800000,
+        "avatarURL": "assets/billgates.jpg",
+        "coverPhotoURL": "assets/billgates-cover.jpeg",
+        "tweets": [
+            {
+                "text": "Everybody asks, how is the next Windows coming along? But nobody asks how is Bill? :/",
+                "timestamp": "2/10/2021 00:01:20",
+                "reply": 5,
+                "retweet": 15,
+                "like": 94
+            },
+            {
+                "retweetUserName": "elonmusk",
+                "tweetIndex" : 2
+            },
+            {
+                "text": "Should I start tweeting memes? Let me know in a comment.",
+                "timestamp": "2/09/2021 18:37:12",
+                "reply": 15785,
+                "retweet": 58500,
+                "like": 300567994
+            },
+            {
+                "text": "In 2020, I read a book every hour.",
+                "timestamp": "2/09/2021 12:11:51",
+                "reply": 857859,
+                "retweet": 753500,
+                "like": 2008567994
+            },
+            {
+                "retweetUserName": "pmarca",
+                "tweetIndex" : 0
+            },
+            {
+                "retweetUserName": "BillyM2k",
+                "tweetIndex" : 0
+            }
+        ]
+    },
+    "pmarca" : {
+        "userName": "@pmarca",
+        "displayName": "Marc Andreessen",
+        "joinedDate": "May 2007",
+        "followingCount": 20321,
+        "followerCount": 1140292,
+        "avatarURL": "assets/pmarca.jpg",
+        "coverPhotoURL": "assets/pmarca-cover.jpeg",
+        "tweets": [
+            {
+                "text": "We look forward to a world founded upon four essential human freedoms. The first is freedom of speech and expression—everywhere in the world. --FDR",
+                "timestamp": "12/05/2022 04:01:20",
+                "reply": 85,
+                "retweet": 500,
+                "like": 799
+            },
+            {
+                "retweetUserName": "elonmusk",
+                "tweetIndex" : 2
+            },
+            {
+                "retweetUserName": "BillyM2k",
+                "tweetIndex" : 0
+            },
+            {
+                "retweetUserName": "BillGates",
+                "tweetIndex" : 2
+            }
+        ]
+    },
+    "BillyM2k" : {
+        "userName": "@BillyM2k",
+        "displayName": "Shibetoshi Nakamoto",
+        "joinedDate": "April 2009",
+        "followingCount": 420,
+        "followerCount": 1984492,
+        "avatarURL": "assets/billym2k.jpg",
+        "coverPhotoURL": "assets/billym2k-cover.jpeg",
+        "tweets": [
+            {
+                "text": "Replying to @lexfridman <br> apple should be more transparent about their processes and probably not have such a monopoly",
+                "timestamp": "12/05/2022 00:01:20",
+                "reply": 5,
+                "retweet": 60,
+                "like": 94
+            },
+            {
+                "retweetUserName": "elonmusk",
+                "tweetIndex" : 2
+            },
+            {
+                "retweetUserName": "BillGates",
+                "tweetIndex" : 0
+            },
+            {
+                "retweetUserName": "pmarca",
+                "tweetIndex" : 0
+            }
+        ]
+    }
+}
