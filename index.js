@@ -1,15 +1,17 @@
 const Tweeter = {
     activeUserIndex: 0,
     setUser(activeUserIndex) {
+        // let data = fetch('https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/4dc231bceb7b05003bf4b58a4a5fe31cb26b9ae7/dynamic_tweeter_clone_data.json')
+        // .then(res => res.json()).then(data => console.log(data));
+
         this.activeUserIndex = activeUserIndex;
         const self = this;
         $.ajax({
             // url: "data.json",
             type: "GET",
-            url: "https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/798e1fa01d93ed1932f36b163c650b59a657c0a3/dynamic_tweeter_clone_data.json",
+            url: "https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/4dc231bceb7b05003bf4b58a4a5fe31cb26b9ae7/dynamic_tweeter_clone_data.json",
             dataType: 'json',
             success: function(data){
-                console.log(data);
                 // Checking if this UserIndex exist in the database
                 if (!isNaN(+self.activeUserIndex)){// if it's a number, convert to number
                     self.activeUserIndex = +self.activeUserIndex;
@@ -19,7 +21,7 @@ const Tweeter = {
                         else console.log("This User Index does not exist in the database, will be shown time line instead.");
                         self.activeUserIndex = Object.keys(data)[0];
                         self.setTimeLine(data);
-                        // window.location.replace("index.html?user=0");
+                        // window.location.replace("/?user=0");
                     };
                 } 
                 //Checking if this User Name exist in the database
@@ -29,7 +31,7 @@ const Tweeter = {
                     console.log('This User Name does not exist in the database, will be shown time line instead.');
                     self.activeUserIndex = Object.keys(data)[0];
                     self.setTimeLine(data);
-                    // window.location.replace("index.html?user=0");
+                    // window.location.replace("/?user=0");
                 }
                 // console.log(`ActiveUser: ${self.activeUserIndex}`);
                 self.setHeader(data[self.activeUserIndex]);
@@ -281,7 +283,7 @@ const Tweeter = {
                     <div class="tweet-wrap flex flex-col flex-grow">
                         <div class="tweet-header flex justify-between">
                             <div class="name-line flex items-center">
-                                <a href="index.html?user=${user.userName.slice(1)}"
+                                <a href="/?user=${user.userName.slice(1)}" target="_top"
                                     class="font-bold text-lg">
                                 ${user.displayName}
                                 </a>
