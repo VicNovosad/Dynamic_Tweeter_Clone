@@ -10,8 +10,8 @@
         "joinedDate": "June 2009",
         "followingCount": 130,
         "followerCount": 119400000,
-        "avatarURL": "assets/elonmusk.jpg",
-        "coverPhotoURL": "assets/elonmusk-cover.jpeg",
+        "avatarURL": "https://dynamic-tweeterclone.netlify.app/assets/elonmusk.jpg",
+        "coverPhotoURL": "https://dynamic-tweeterclone.netlify.app/assets/elonmusk-cover.jpeg",
         "tweets": [
             {
                 "retweetUserName": "BillGates",
@@ -59,8 +59,8 @@
         "joinedDate": "June 2009",
         "followingCount": 274,
         "followerCount": 53800000,
-        "avatarURL": "assets/billgates.jpg",
-        "coverPhotoURL": "assets/billgates-cover.jpeg",
+        "avatarURL": "https://dynamic-tweeterclone.netlify.app/assets/billgates.jpg",
+        "coverPhotoURL": "https://dynamic-tweeterclone.netlify.app/assets/billgates-cover.jpeg",
         "tweets": [
             {
                 "text": "Everybody asks, how is the next Windows coming along? But nobody asks how is Bill? :/",
@@ -103,8 +103,8 @@
         "joinedDate": "May 2007",
         "followingCount": 20321,
         "followerCount": 1140292,
-        "avatarURL": "assets/pmarca.jpg",
-        "coverPhotoURL": "assets/pmarca-cover.jpeg",
+        "avatarURL": "https://dynamic-tweeterclone.netlify.app/assets/pmarca.jpg",
+        "coverPhotoURL": "https://dynamic-tweeterclone.netlify.app/assets/pmarca-cover.jpeg",
         "tweets": [
             {
                 "text": "We look forward to a world founded upon four essential human freedoms. The first is freedom of speech and expression—everywhere in the world. --FDR",
@@ -133,8 +133,8 @@
         "joinedDate": "April 2009",
         "followingCount": 420,
         "followerCount": 1984492,
-        "avatarURL": "assets/billym2k.jpg",
-        "coverPhotoURL": "assets/billym2k-cover.jpeg",
+        "avatarURL": "https://dynamic-tweeterclone.netlify.app/assets/billym2k.jpg",
+        "coverPhotoURL": "https://dynamic-tweeterclone.netlify.app/assets/billym2k-cover.jpeg",
         "tweets": [
             {
                 "text": "Replying to @lexfridman <br> apple should be more transparent about their processes and probably not have such a monopoly",

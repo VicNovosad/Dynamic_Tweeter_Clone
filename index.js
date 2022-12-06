@@ -4,8 +4,12 @@ const Tweeter = {
         this.activeUserIndex = activeUserIndex;
         const self = this;
         $.ajax({
-            url: "data.json",
+            // url: "data.json",
+            type: "GET",
+            url: "https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/798e1fa01d93ed1932f36b163c650b59a657c0a3/dynamic_tweeter_clone_data.json",
+            dataType: 'json',
             success: function(data){
+                console.log(data);
                 // Checking if this UserIndex exist in the database
                 if (!isNaN(+self.activeUserIndex)){// if it's a number, convert to number
                     self.activeUserIndex = +self.activeUserIndex;
