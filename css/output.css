@@ -697,8 +697,12 @@ video {
   height: 1.5rem;
 }
 
-.h-auto {
-  height: auto;
+.h-10 {
+  height: 2.5rem;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .h-7 {
@@ -733,18 +737,6 @@ video {
   height: 1.25rem;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.h-10 {
-  height: 2.5rem;
-}
-
-.min-h-\[40px\] {
-  min-height: 40px;
-}
-
 .w-\[85\%\] {
   width: 85%;
 }
@@ -765,17 +757,17 @@ video {
   width: 15%;
 }
 
-.w-min {
-  width: -moz-min-content;
-  width: min-content;
+.w-full {
+  width: 100%;
 }
 
 .w-7 {
   width: 1.75rem;
 }
 
-.w-full {
-  width: 100%;
+.w-min {
+  width: -moz-min-content;
+  width: min-content;
 }
 
 .w-\[150px\] {
@@ -958,16 +950,12 @@ video {
   padding: 0.25rem;
 }
 
-.p-4 {
-  padding: 1rem;
-}
-
-.p-\[1px\] {
-  padding: 1px;
-}
-
 .p-\[2px\] {
   padding: 2px;
+}
+
+.p-4 {
+  padding: 1rem;
 }
 
 .px-4 {
@@ -1164,7 +1152,7 @@ video {
 
 :root {
   /* --blue: rgb(30, 155, 240); */
-  --blue: rgb(161, 163, 255);
+  --blue: rgb(20, 152, 119);
   --light-blue: rgb(233, 245, 254);
   --red: rgb(248, 97, 106);
   --pink: rgb(254, 232, 233);
@@ -1254,6 +1242,21 @@ video {
 
 .tweet-box:last-child {
   border-bottom-width: 1px;
+}
+
+@media only screen and (max-width: 450px){
+  .tweets-container,
+    .profile-details {
+    width: 100%;
+  }
+
+  .left-nav-col{
+    display: none;
+  }
+
+  header {
+    width: 100% !important;
+  }
 }
 
 .placeholder\:text-gray-600::-moz-placeholder {

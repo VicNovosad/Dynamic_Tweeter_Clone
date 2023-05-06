@@ -9,7 +9,8 @@ const Tweeter = {
         $.ajax({
             // url: "data.json",
             type: "GET",
-            url: "https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/4dc231bceb7b05003bf4b58a4a5fe31cb26b9ae7/dynamic_tweeter_clone_data.json",
+            // url: "https://gist.githubusercontent.com/VicNovosad/1cf0f7119d8fca2408014b0837fe33ed/raw/4dc231bceb7b05003bf4b58a4a5fe31cb26b9ae7/dynamic_tweeter_clone_data.json",
+            url: "/data.json",
             dataType: 'json',
             success: function(data){
                 // Checking if this UserIndex exist in the database
@@ -87,7 +88,7 @@ const Tweeter = {
                     <svg class="top-tweets w-9 h-9 p-1.5 ml-1 group hover:bg-gray-300 rounded-full duration-500" viewBox="0 0 24 24" aria-label="Verified account" role="img" fill="black">
                         <path d="M2 4c1.66 0 3-1.34 3-3h1c0 1.66 1.34 3 3 3v1C7.34 5 6 6.34 6 8H5c0-1.66-1.34-3-3-3V4zm7.89 4.9C11.26 7.53 12 5.35 12 2h2c0 3.35.74 5.53 2.1 6.9 1.36 1.36 3.55 2.1 6.9 2.1v2c-3.35 0-5.54.74-6.9 2.1-1.36 1.37-2.1 3.55-2.1 6.9h-2c0-3.35-.74-5.53-2.11-6.9C8.53 13.74 6.35 13 3 13v-2c3.35 0 5.53-.74 6.89-2.1zm7.32 3.1c-.97-.42-1.81-.97-2.53-1.69-.71-.71-1.27-1.56-1.68-2.52-.42.96-.98 1.81-1.69 2.52-.72.72-1.56 1.27-2.53 1.69.97.42 1.81.97 2.53 1.69.71.71 1.27 1.56 1.69 2.52.41-.96.97-1.81 1.68-2.52.72-.72 1.56-1.27 2.53-1.69z"></path>
                     </svg>
-                    <button class="hover-message opacity-0 absolute right-[8px] bottom-[-12px] px-1 py-[1px] pb-0.5 bg-gray-500 text-white text-sm group-hover:opacity-100 duration-1000 ease-in delay-200">Top tweets</button>
+                    <button class="hover-message opacity-0 absolute right-[8px] bottom-[-12px] px-1 py-[1px] pb-0.5 bg-gray-500 text-white text-sm group-hover:opacity-100 duration-1000 ease-in delay-200">Top messages</button>
                 </div>
             </div>`);
         $('.profile-details').html(`
@@ -163,7 +164,7 @@ const Tweeter = {
     setHeader(User) {
         $(`header .name`).text(User.displayName);
         $(`header .tweets-number`)
-        .text(`${this.formatNumber(User.tweets.length)} Tweets`);
+        .text(`${this.formatNumber(User.tweets.length)} Messages`);
         $(`.picture-container .background-picture`)
         .css('background-image', `url(${User.coverPhotoURL})`);
         $(`.picture-container .avatar-picture`)
@@ -324,12 +325,12 @@ const Tweeter = {
                                             <svg class="mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                 <path d="M15.24 4.31l-4.55 15.93-1.93-.55 4.55-15.93 1.93.55zm-8.33 3.6L3.33 12l3.58 4.09-1.5 1.32L.67 12l4.74-5.41 1.5 1.32zm11.68-1.32L23.33 12l-4.74 5.41-1.5-1.32L20.67 12l-3.58-4.09 1.5-1.32z"></path>
                                             </svg>
-                                            Embed Tweet</a>
+                                            Embed message</a>
                                         <a href="#" class="flex group text-black hover:bg-gray-200 px-4 py-2 text-base font-medium" role="menuitem" tabindex="-1" id="menu-item-2">
                                             <svg class="mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                 <path d="M3 2h18.61l-3.5 7 3.5 7H5v6H3V2zm2 12h13.38l-2.5-5 2.5-5H5v10z"></path>
                                             </svg>
-                                            Report Tweet</a>
+                                            Report message</a>
                                     </div>
                                 </div>
                             </button>
@@ -372,12 +373,12 @@ const Tweeter = {
                                             <svg class="mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                 <path d="M18.36 5.64c-1.95-1.96-5.11-1.96-7.07 0L9.88 7.05 8.46 5.64l1.42-1.42c2.73-2.73 7.16-2.73 9.9 0 2.73 2.74 2.73 7.17 0 9.9l-1.42 1.42-1.41-1.42 1.41-1.41c1.96-1.96 1.96-5.12 0-7.07zm-2.12 3.53l-7.07 7.07-1.41-1.41 7.07-7.07 1.41 1.41zm-12.02.71l1.42-1.42 1.41 1.42-1.41 1.41c-1.96 1.96-1.96 5.12 0 7.07 1.95 1.96 5.11 1.96 7.07 0l1.41-1.41 1.42 1.41-1.42 1.42c-2.73 2.73-7.16 2.73-9.9 0-2.73-2.74-2.73-7.17 0-9.9z"></path>
                                             </svg>
-                                            Copy link to Tweet</a>
+                                            Copy link to Message</a>
                                         <a href="#" class="flex group text-black hover:bg-gray-200 px-4 py-2 text-base font-medium" role="menuitem" tabindex="-1" id="menu-item-1">
                                             <svg class="mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                 <path d="M12 2.59l5.7 5.7-1.41 1.42L13 6.41V16h-2V6.41l-3.3 3.3-1.41-1.42L12 2.59zM21 15l-.02 3.51c0 1.38-1.12 2.49-2.5 2.49H5.5C4.11 21 3 19.88 3 18.5V15h2v3.5c0 .28.22.5.5.5h12.98c.28 0 .5-.22.5-.5L19 15h2z"></path>
                                             </svg>
-                                            Share Tweet via ...</a>
+                                            Share Message via ...</a>
                                         <a href="#" class="flex group text-black hover:bg-gray-200 px-4 py-2 text-base font-medium" role="menuitem" tabindex="-1" id="menu-item-2">
                                             <svg class="mr-3 h-5 w-5 text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                 <path d="M1.998 5.5c0-1.381 1.119-2.5 2.5-2.5h15c1.381 0 2.5 1.119 2.5 2.5v13c0 1.381-1.119 2.5-2.5 2.5h-15c-1.381 0-2.5-1.119-2.5-2.5v-13zm2.5-.5c-.276 0-.5.224-.5.5v2.764l8 3.638 8-3.636V5.5c0-.276-.224-.5-.5-.5h-15zm15.5 5.463l-8 3.636-8-3.638V18.5c0 .276.224.5.5.5h15c.276 0 .5-.224.5-.5v-8.037z"></path>
