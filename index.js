@@ -134,7 +134,7 @@ const Tweeter = {
                         </button>
                     </div>
                     <div class="btn-wrap flex">
-                        <button class="button tweet-btn m-4 ml-auto">Tweet</button>
+                        <button class="button tweet-btn m-4 ml-auto">Write</button>
                     </div>
             </div>
         `);
